@@ -17,6 +17,9 @@ float preco_final;
   
   preco_inicial = 100.0f;
 
+  printf("Entre com o preco inicial: ");
+  int deu_certo = scanf("%f", &preco_inicial);
+
   float valor_imposto_icms = ICMS * preco_inicial;
   float valor_imposto_cofins = COFINS * preco_inicial;
   float valor_imposto_pis_pasep = PIS_PASEP * preco_inicial;
